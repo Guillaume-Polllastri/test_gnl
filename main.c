@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guill <guill@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 13:13:56 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/08 13:14:10 by gpollast         ###   ########.fr       */
+/*   Updated: 2025/05/09 19:14:49 by guill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main()
     int fd;
     char    *line;
 
-    fd = open("get_next_line.c", O_RDONLY);
+    fd = open("nl", O_RDONLY);
     while ((line = get_next_line(fd)))
     {
         printf("a%s", line);

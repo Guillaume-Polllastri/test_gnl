@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gpollast <gpollast@student.42.fr>          +#+  +:+       +#+         #
+#    By: guill <guill@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 21:14:10 by gpollast          #+#    #+#              #
-#    Updated: 2025/05/09 16:21:58 by gpollast         ###   ########.fr        #
+#    Updated: 2025/05/09 18:19:40 by guill            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -D BUFFER_SIZE=9999
+CFLAGS = -Wall -Werror -Wextra -D BUFFER_SIZE=1
 LDFLAGS = -L. -lft -lbsd
 TARGET = a.out
 MAKE = make

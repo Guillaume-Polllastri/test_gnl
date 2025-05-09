@@ -6,7 +6,7 @@
 /*   By: guill <guill@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 17:24:01 by gpollast          #+#    #+#             */
-/*   Updated: 2025/05/09 15:48:09 by guill            ###   ########.fr       */
+/*   Updated: 2025/05/09 19:28:34 by guill            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,8 @@ char	*get_next_line(int fd)
 	ssize_t		status;
 	char		*tmp;
 
+	if (fd < 0)
+		return (NULL);
 	status = 1;
 	while (status > 0)
 	{
@@ -91,7 +93,13 @@ char	*get_next_line(int fd)
 			return (NULL);
 		if (status == 0)
 		{
+			if (ft_strlen(buffer) == 0)
+			{
+				free(buffer);
+				return(NULL);
+			}
 			tmp = buffer;
+
 			buffer = NULL;
 			return (tmp);
 		}
