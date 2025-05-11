@@ -6,12 +6,12 @@
 #    By: guill <guill@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 21:14:10 by gpollast          #+#    #+#              #
-#    Updated: 2025/05/09 18:19:40 by guill            ###   ########.fr        #
+#    Updated: 2025/05/11 16:55:02 by gpollast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -D BUFFER_SIZE=1
+CFLAGS = -Wall -Werror -Wextra -D BUFFER_SIZE=10
 LDFLAGS = -L. -lft -lbsd
 TARGET = a.out
 MAKE = make
